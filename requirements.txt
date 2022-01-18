@@ -41,13 +41,6 @@ jiwer==2.3.0
 joblib==1.1.0
 json5==0.9.6
 jsonschema==4.4.0
-jupyter-client==7.1.1
-jupyter-core==4.9.1
-jupyter-server==1.13.3
-jupyterlab==3.2.8
-jupyterlab-pygments==0.1.2
-jupyterlab-server==2.10.3
-jupyterlab-widgets==1.0.2
 kenlm @ https://github.com/kpu/kenlm/archive/master.zip
 MarkupSafe==2.0.1
 matplotlib-inline==0.1.3
