@@ -86,7 +86,11 @@ def main():
     chars_to_ignore_regex = f'[{"".join(chars_to_ignore)}]'
 
     def speech_file_to_array_fn(batch):
-        speech_array, sampling_rate = torchaudio.load(batch["path"])
+        if "audio" in batch:
+            #batch["sentence"] = re.sub(chars_to_ignore_regex, '', batch["sentence"]).lower()
+            speech_array = torch.tensor(batch["audio"]["array"])
+        else:
+            speech_array, sampling_rate = torchaudio.load(batch["path"])
         batch["speech"] = resampler(speech_array).squeeze().numpy()
         return batch
 
