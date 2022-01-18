@@ -7,4 +7,5 @@ transformers==4.15.0
 huggingface-hub==0.4.0
 numpy
 pandas
+pyctcdecode==0.3.0
 kenlm @ https://github.com/kpu/kenlm/archive/master.zip
