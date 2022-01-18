@@ -9,3 +9,4 @@ numpy
 pandas
 pyctcdecode==0.3.0
 kenlm @ https://github.com/kpu/kenlm/archive/master.zip
+jiwer
