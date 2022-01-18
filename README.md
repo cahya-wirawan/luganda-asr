@@ -1,1 +1,1 @@
-# luganda-asr
+# Automatic Speech Recognition for Luganda
