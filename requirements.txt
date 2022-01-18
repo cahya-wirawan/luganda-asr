@@ -1,10 +1,10 @@
 datasets==1.17.0
 torch==1.10.1
 torchaudio==0.10.1
-tqdm==4.62.3
-Unidecode==1.3.2
+tqdm
+Unidecode
 transformers==4.15.0
 huggingface-hub==0.4.0
-numpy==1.22.1
-pandas==1.3.5
+numpy
+pandas
 kenlm @ https://github.com/kpu/kenlm/archive/master.zip
