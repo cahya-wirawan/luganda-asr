@@ -3,6 +3,8 @@
 
 We trained the [Automatic Speech Recognition for Luganda](https://huggingface.co/indonesian-nlp/wav2vec2-luganda) model 
 as part of [Mozilla Luganda Automatic Speech Recognition](https://zindi.africa/competitions/mozilla-luganda-automatic-speech-recognition/).
+Our model achieve the Word Error Rate (WER) of **7.37%** on Mozilla Common Voice version 6.1
+and **7.53%** on Mozilla Common Voice version 7.0.
 
 We use several python scripts to do the training/fine-tuning, evaluation and the creation of submission file:
 - run_finetuning.py
