@@ -13,6 +13,11 @@ We use several python scripts to do the training/fine-tuning, evaluation and the
 
 We prepared a [jupyter notebook](Luganda_ASR.ipynb) to run all these tasks in Google Colab.
 
+## Dataset
+We trained the model using [Mozilla Common Voice](https://commonvoice.mozilla.org/en/datasets)
+dataset version 7.0 for Luganda.
+The test dataset can be downloaded from [Mozilla Luganda - ASR dataset](https://zindi.africa/competitions/mozilla-luganda-automatic-speech-recognition/data).
+
 ## Model Training
 
 We have fine-tuned the Facebook Wav2Vec2 model with the Luganda Common Voice dataset and stored it in https://huggingface.co/indonesian-nlp/wav2vec2-luganda. The model has been trained for 200 epochs in 4 hours and 30 minutes using 8 GPUs.
