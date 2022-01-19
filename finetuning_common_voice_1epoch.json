@@ -7,7 +7,7 @@
   "dataset_min_textlength": 10,
   "output_dir": "output/wav2vec2-common_voice-lg",
   "overwrite_output_dir": true,
-  "num_train_epochs": 200,
+  "num_train_epochs": 1,
   "per_device_eval_batch_size": 8,
   "per_device_train_batch_size": 8,
   "evaluation_strategy": "steps",
