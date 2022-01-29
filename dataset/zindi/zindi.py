@@ -117,7 +117,7 @@ class Zindi(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TEST,
                     gen_kwargs={
                         "path_to_index": os.path.join(data_dir, f"{data_dir}/Test.csv"),
-                        "path_to_data": os.path.join(data_dir, f"{data_dir}/content/test_audio"),
+                        "path_to_data": os.path.join(data_dir, f"{data_dir}/content/test_dataset"),
                         "split": "test"
                     },
                 ),
@@ -158,7 +158,7 @@ class Zindi(datasets.GeneratorBasedBuilder):
                         clip_id, client_id, up_votes, down_votes, age, gender, sentence = field_values
                         sentence_index[clip_id] = sentence
                     else:
-                        clip_id, client_id, up_votes, down_votes, age, gender = field_values
+                        clip_id, client_id, up_votes, down_votes = field_values
                         sentence_index[clip_id] = ""
             for path_to_soundfile in sorted(Path(path_to_data).rglob("*.mp3")):
                 filename = path_to_soundfile.stem
