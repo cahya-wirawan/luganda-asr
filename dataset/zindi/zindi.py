@@ -117,7 +117,7 @@ class Zindi(datasets.GeneratorBasedBuilder):
                     name=datasets.Split.TEST,
                     gen_kwargs={
                         "path_to_index": os.path.join(data_dir, f"{data_dir}/Test.csv"),
-                        "path_to_data": os.path.join(data_dir, f"{data_dir}/test_audio"),
+                        "path_to_data": os.path.join(data_dir, f"{data_dir}/content/test_audio"),
                         "split": "test"
                     },
                 ),
